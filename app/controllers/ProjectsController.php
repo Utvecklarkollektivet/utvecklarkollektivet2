@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Projects;
+use app\extensions\helper\AuthHelper;
 
 class ProjectsController extends \lithium\action\Controller {
 	
@@ -23,7 +24,7 @@ class ProjectsController extends \lithium\action\Controller {
 	}
 
     public function edit($id = null) {
-
+        AuthHelper::AuthOrRedirect();
         if($id == null)
         {
             

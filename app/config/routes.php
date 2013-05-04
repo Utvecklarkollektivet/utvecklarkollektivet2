@@ -92,6 +92,9 @@ if (!Environment::is('production')) {
  * In almost all cases, custom routes should be added above this one, since route-matching works in
  * a top-down fashion.
  */
+Router::connect("/login", "Sessions::login");
+Router::connect("/logout", "Sessions::logout");
+
 Router::connect('/{:controller}/{:action}/{:args}');
 
 

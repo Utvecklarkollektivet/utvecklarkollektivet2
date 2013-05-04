@@ -63,8 +63,8 @@ use lithium\data\Connections;
  	'type' => 'database',
  	'adapter' => 'MySql',
  	'host' => '109.74.0.159',
- 	'login' => 'root',
- 	'password' => '',
+ 	'login' => 'uk',
+ 	'password' => 'ukhack12',
  	'database' => 'utvecklarkollektivet_dev',
  	'encoding' => 'UTF-8'
  ));

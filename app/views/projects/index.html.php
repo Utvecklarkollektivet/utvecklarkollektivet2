@@ -1,3 +1,3 @@
 <?php foreach($projects as $project): ?>
-    <?=$this->html->link($project->title, "/Projects/view/$project->id");?><br>
+    <?=$this->html->link($project->title, "/Projects/show/$project->id");?><br>
 <?php endforeach; ?>

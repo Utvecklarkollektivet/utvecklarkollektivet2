@@ -10,13 +10,19 @@ namespace app\controllers;
 
 class WhiteboardsController extends \lithium\action\Controller {
 
-	public function get($projectId = null) {
+    public function index() {
+        return $this->render(array('json' => "Hello World"));
+    }
 
-        if($projectId == null)
-            return $this->render(array('error' => 'true'));
 
+	public function get($id = null) {
 
-		return $this->render(array('json' => 'Hello World'));
+        if($id == null)
+            return $this->render(array('json' => array('success' => 'false')));
+
+        $board = Whiteboards::find('all', array('conditions' => array('projectid' => $id)));
+
+		return $this->render(array('json' => $board = array(), 'status' => 200));
 	}
 }
 

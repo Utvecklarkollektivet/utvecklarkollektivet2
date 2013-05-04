@@ -41,7 +41,7 @@ class ProjectsController extends \lithium\action\Controller {
         return array('project' => $project);
     }
 
-    public function view($id = null)
+    public function show($id = null)
     {
         $project = Projects::find($id);
         return compact('project');

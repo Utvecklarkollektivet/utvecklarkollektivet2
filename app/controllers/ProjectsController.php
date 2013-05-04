@@ -46,7 +46,7 @@ class ProjectsController extends \lithium\action\Controller {
         $project = Projects::find($id);
 		$comments = Comments::find('all', array(
 			'conditions' => array('project_id' => $id
-		));
+		)));
         return compact('project');
     }
 

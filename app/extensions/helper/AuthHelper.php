@@ -3,6 +3,8 @@
 	namespace app\extensions\helper;
 
 	use lithium\security\Auth;
+	use app\models\Users;
+	use app\models\Roles;
 	
 	class AuthHelper extends \lithium\template\Helper {
 
@@ -21,6 +23,11 @@
 			}
 		}
 
+		public static function currentUser() {		
+		    $user = Auth::check("default");
+		    $user = Users::first(array("conditions" => array("id" => $user['id'])));
+		    return $user;
+		}
 		
 	}
 

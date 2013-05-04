@@ -9,7 +9,7 @@
 		    'action' => array('type' => 'string', 'null' => false),
 		);
 		
-		public $hasMany = array('Roles');
+		public $hasMany = array('AclPathRoles');
 
 	}
 

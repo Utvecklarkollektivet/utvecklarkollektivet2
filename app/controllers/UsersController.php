@@ -7,7 +7,7 @@
 	use app\models\Users;
 
 
-	class UsersController extends \lithium\action\Controller {
+	class UsersController extends \app\extensions\action\ACLController {
 		
 		public function index() {
 			$users = Users::all();

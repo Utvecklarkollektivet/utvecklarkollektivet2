@@ -61,6 +61,7 @@ require __DIR__ . '/bootstrap/connections.php';
  * authentication.
  */
  require __DIR__ . '/bootstrap/session.php';
+ 
 
 /**
  * This file contains your application's globalization rules, including inflections,

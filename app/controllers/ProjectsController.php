@@ -21,6 +21,10 @@ class ProjectsController extends \lithium\action\Controller {
 
 		return compact("success");
 	}
+
+    public function edit() {
+        $success = false;
+    }
 }
 
 ?>

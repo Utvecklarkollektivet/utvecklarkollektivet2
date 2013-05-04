@@ -11,6 +11,15 @@
             	return $this->redirect('Sessions::login');
         	}
 		}
+		
+		public function isAuthed() {
+			if(Auth::check('default')) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
 
 		
 	}

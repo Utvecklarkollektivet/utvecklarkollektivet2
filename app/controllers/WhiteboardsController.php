@@ -10,6 +10,11 @@ namespace app\controllers;
 
 class WhiteboardsController extends \lithium\action\Controller {
 
+    public function index() {
+        return $this->render(array('json' => "Hello World")));
+    }
+
+
 	public function get($projectId = null) {
 
         if($projectId == null)

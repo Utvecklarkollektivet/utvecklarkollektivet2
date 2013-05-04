@@ -12,7 +12,7 @@
 	<?php echo $this->html->charset();?>
 	<title>Application &gt; <?php echo $this->title(); ?></title>
 	<?php echo $this->html->style(array('debug', 'lithium', 'foundation')); ?>
-	<?php echo $this->scripts(array('foundation.min.js')); ?>
+	<?php echo $this->scripts(); ?>
 	<?php echo $this->html->link('Icon', null, array('type' => 'icon')); ?>
 </head>
 <body class="app">

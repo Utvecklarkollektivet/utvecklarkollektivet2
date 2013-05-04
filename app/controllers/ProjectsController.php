@@ -46,6 +46,7 @@ class ProjectsController extends \lithium\action\Controller {
         $project = Projects::find($id);
         return compact('project');
     }
+
 }
 
 ?>

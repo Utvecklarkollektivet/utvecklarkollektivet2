@@ -8,7 +8,7 @@
 		    'role' => array('type' => 'string', 'null' => false),
 		);
 
-		public $hasMany = array("Users");
+		public $hasMany = array("Users", "AclPaths");
 
 	}
 

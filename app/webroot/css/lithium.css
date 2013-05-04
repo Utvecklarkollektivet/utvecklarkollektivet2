@@ -292,3 +292,10 @@ input, textarea {
 	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.1);
 	box-shadow: inset 0 0 3px rgba(0,0,0,.1);
 }
+
+header
+{
+    width: 100%;
+    padding: 10px;
+    background-color: #afafaf;
+}

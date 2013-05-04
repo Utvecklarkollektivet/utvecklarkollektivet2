@@ -15,6 +15,7 @@ class Projects extends \lithium\data\Model {
 	    'permission_world' => array('type' => 'int', 'default' => 0, 'null' => false),
 	);
 
+
 }
 
 ?>

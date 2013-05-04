@@ -44,7 +44,7 @@ Session::config(array(
  	'default' => array(
  	'adapter' => 'Form',
 	'model' => 'Users',
-	'fields' => array('email', 'name', 'password')
+	'fields' => array('email', 'password')
  	)
  ));
 

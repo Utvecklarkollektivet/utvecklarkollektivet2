@@ -8,7 +8,7 @@
 
 		public function GenerateMenu() {
 			if ($user = Auth::check('default')) {
-                echo 'Välkommen, '.$user['name'].'!';
+                echo 'Welcome, '.$user['name'].'!';
         	}
             else
             {

@@ -6,8 +6,9 @@ class ACLController extends \lithium\action\Controller {
 
     protected function _init() {
         parent::_init();
-        echo "Before";
-        //add your functionality here
+        $controller = $this->request->params["controller"];
+        $action = $this->request->params["action"];
+        #var_dump($this->request);
     }
 }
 

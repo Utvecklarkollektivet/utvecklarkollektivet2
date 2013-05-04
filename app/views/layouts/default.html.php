@@ -16,7 +16,7 @@
 	<?php echo $this->html->link('Icon', null, array('type' => 'icon')); ?>
 </head>
 <body class="app">
-    <header><?php echo $this->menuhelper->generatemenu();?></header>
+    <header><?php echo $this->MenuHelper->GenerateMenu();?></header>
 	<div id="container">
 		<div id="header">
 			<h1>Utvecklarkollektivet</h1>

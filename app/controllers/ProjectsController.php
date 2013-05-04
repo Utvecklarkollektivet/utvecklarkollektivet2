@@ -29,12 +29,11 @@ class ProjectsController extends \lithium\action\Controller {
             
         }
 
-        $success = false;
         $project = Projects::find($id);
         if($this->request->data) {
             $project->title = $this->request->data['title'];
             $project->description = $this->request->data['description'];
-            $success = $project->save();
+            $project->save();
             $this->redirect('Projects');
         }
            

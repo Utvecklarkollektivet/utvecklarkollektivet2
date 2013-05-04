@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Projects;
+use app\models\Comments;
 use app\extensions\helper\AuthHelper;
 
 class ProjectsController extends \lithium\action\Controller {
@@ -47,7 +48,7 @@ class ProjectsController extends \lithium\action\Controller {
 		$comments = Comments::find('all', array(
 			'conditions' => array('project_id' => $id
 		)));
-        return compact('project');
+        return compact('project', 'comments');
     }
 
 }

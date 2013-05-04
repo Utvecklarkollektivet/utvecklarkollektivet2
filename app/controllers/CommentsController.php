@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use app\models\Projects;
+use app\models\Comments;
 
 class CommentsController extends \lithium\action\Controller {
 	
@@ -19,7 +19,7 @@ class CommentsController extends \lithium\action\Controller {
 			$success = $comment->save();
 		}
 
-		return compact("success");
+		$this->redirect('projects/show/' . $this->request->data['project_id']);
 	}
 
     public function edit($id = null) {

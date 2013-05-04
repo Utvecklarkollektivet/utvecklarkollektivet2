@@ -8,17 +8,14 @@
 
 namespace app\controllers;
 
-class HelloWorldController extends \lithium\action\Controller {
+class WhiteboardsController extends \lithium\action\Controller {
 
-	public function index() {
-		return $this->render(array('layout' => false));
-	}
+	public function get($projectId = null) {
 
-	public function to_string() {
-		return "Hello World";
-	}
+        if($projectId == null)
+            return $this->render(array('error' => 'true'));
 
-	public function to_json() {
+
 		return $this->render(array('json' => 'Hello World'));
 	}
 }

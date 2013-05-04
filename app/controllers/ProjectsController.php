@@ -22,8 +22,28 @@ class ProjectsController extends \lithium\action\Controller {
 		return compact("success");
 	}
 
-    public function edit() {
-        $success = false;
+    public function edit($id = null) {
+
+        if($id == null)
+        {
+            
+        }
+
+        $project = Projects::find($id);
+        if($this->request->data) {
+            $project->title = $this->request->data['title'];
+            $project->description = $this->request->data['description'];
+            $project->save();
+            $this->redirect('Projects');
+        }
+           
+        return array('project' => $project);
+    }
+
+    public function view($id = null)
+    {
+        $project = Projects::find($id);
+        return compact('project');
     }
 }
 

@@ -16,7 +16,14 @@
 	<?php echo $this->html->link('Icon', null, array('type' => 'icon')); ?>
 </head>
 <body class="app">
-    <header><?php echo $this->MenuHelper->GenerateMenu();?></header>
+    <nav class="top-bar">
+        <section class="top-bar-section">
+            <ul class="left"></ul>
+            <ul class="right">
+                <?php echo $this->MenuHelper->GenerateMenu();?>
+            </ul>
+        </section>
+    </nav>
 	<div id="container">
 		<div id="header">
 			<h1>Utvecklarkollektivet</h1>

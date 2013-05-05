@@ -3,11 +3,11 @@
 <h4><?=$project->description;?></h4>
 <h2>Comments</h2>
 <?php foreach($comments as $comment): ?>
-	<?php echo $comment->content; ?>
+	<?php echo $comment->content.'<br>'; ?>
 <?php endforeach; ?>
 
 <?=$this->form->create(null, array('url' => array('controller' => 'comments', 'action' => 'add'))); ?>
 	<?=$this->form->hidden('project_id', array('value' => $project->id)); ?>
     <?=$this->form->field('content', array('type' => 'textarea'));?>
-    <?=$this->form->submit('Create Project'); ?>
+    <?=$this->form->submit('Comment'); ?>
 <?=$this->form->end(); ?>
